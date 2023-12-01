@@ -10,3 +10,8 @@ export interface MovieModel {
   image: string;
   watchList?: boolean;
 }
+
+export enum SortBy {
+  'title',
+  'released_date',
+}

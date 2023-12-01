@@ -23,3 +23,10 @@ export const sortMovies = createAction(
   SORT_MOVIES,
   props<{ sortby: 'title' | 'released_date' }>()
 );
+
+export const ADD_TO_WATCHLIST = '[Movies list] Add to watchlist';
+
+export const addToWatchlist = createAction(
+  ADD_TO_WATCHLIST,
+  props<{ id: number | undefined }>()
+);

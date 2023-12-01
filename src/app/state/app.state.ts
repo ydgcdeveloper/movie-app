@@ -1,6 +1,6 @@
 import { ActionReducerMap } from '@ngrx/store';
 import { MovieState } from '../core/models/movie.state';
-import { moviesReducer } from './reducers/product.reducers';
+import { moviesReducer } from './reducers/movie.reducers';
 
 export interface AppState{
     movies: MovieState

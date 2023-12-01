@@ -30,7 +30,7 @@
   font-size: 1.3rem;
 }
 
-.movie-data > .title {
+.movie-data .title {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 0.4rem;
@@ -66,10 +66,12 @@
   color: #fff;
   border-radius: 10px;
   border: none;
+  height: 80%;
+  padding: 0 .8rem;
 }
 
 .movie-data button.add {
-  background-color: rgb(220, 63, 63);
+  background-color: rgb(241, 62, 62);
   box-shadow: inset 3px 3px 6px #da4911, 3px 3px 6px rgb(185, 25, 25);
   transition: transform 0.05s ease-in-out;
   cursor: pointer;

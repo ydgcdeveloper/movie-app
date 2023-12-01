@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
+import { loadMovies } from 'src/app/state/actions/movie.actions';
 import { AppState } from 'src/app/state/app.state';
 import { selectMoviesList } from 'src/app/state/selectors/product.selectors';
 
@@ -12,7 +13,9 @@ import { selectMoviesList } from 'src/app/state/selectors/product.selectors';
 export class ListComponent implements OnInit {
   movies$: Observable<any> = new Observable();
 
-  constructor(private store: Store<AppState>) {}
+  constructor(private store: Store<AppState>) {
+    this.store.dispatch(loadMovies());
+  }
 
   ngOnInit(): void {
     this.movies$ = this.store.select(selectMoviesList);

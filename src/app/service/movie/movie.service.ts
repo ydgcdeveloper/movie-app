@@ -1,14 +1,14 @@
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
+import { moviesData } from 'src/app/core/data/movies.data';
 // import { collection, getDocs, addDoc, deleteDoc, doc, updateDoc } from 'firebase/firestore/lite';
 // import { db } from 'src/app/firebase/firebase';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class MovieService {
-
-  constructor() { }
+  constructor() {}
 
   async getMovies(): Promise<any> {
     // const moviesCol = collection(db, 'movie');
@@ -19,8 +19,6 @@ export class MovieService {
     //     id: doc.id
     //   }
     // });
-    // return movieList;
-    return null
+    return moviesData;
   }
-
 }

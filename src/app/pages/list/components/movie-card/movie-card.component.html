@@ -7,8 +7,8 @@
       <p class="title">
         {{ movie.title }}
       </p>
-      <button class="add">Add to Watchlist</button>
-      <button class="on" disabled>On my watchlist</button>
+      <button *ngIf="!movie.watchList" class="add" (click)="add()">Add to Watchlist</button>
+      <button *ngIf="movie.watchList" class="on" disabled>On my watchlist</button>
     </div>
     <div class="data-row">
       <p class="duration">
