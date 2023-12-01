@@ -1,0 +1,87 @@
+.moview-card {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.moview-card > .movie-data {
+  flex: 1;
+}
+
+.movie-image img {
+  height: 20rem;
+  border: 0.35rem solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-image img:hover {
+  transform: scale(1.06);
+}
+
+.movie-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.8rem;
+  padding: 2vh 0;
+  font-size: 1.3rem;
+}
+
+.movie-data > .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.movie-data .duration::after {
+  content: "|";
+}
+
+.movie-data > .rating img {
+  height: 1.2rem;
+}
+
+.movie-data .label {
+  color: #dabcbc;
+}
+
+.movie-data .date {
+  font-size: 1rem;
+}
+
+.data-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.data-row-expanded {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-data button {
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.movie-data button.add {
+  background-color: rgb(220, 63, 63);
+  box-shadow: inset 3px 3px 6px #da4911, 3px 3px 6px rgb(185, 25, 25);
+  transition: transform 0.05s ease-in-out;
+  cursor: pointer;
+}
+
+.movie-data button.add:hover {
+  transform: scale(1.02);
+}
+
+.movie-data button.on {
+    color: red;
+    font-size: 1rem;
+    background-color: rgb(220, 194, 63);
+    box-shadow: inset 3px 3px 6px #8a1c1e, 3px 3px 6px rgb(210, 125, 125);
+  }

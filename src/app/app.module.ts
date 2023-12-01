@@ -12,6 +12,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { MovieEffects } from './state/effects/product.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ListHeaderComponent } from './pages/list/components/list-header/list-header.component';
+import { ArrayJoinPipe } from './pipe/array-join.pipe';
+import { DetailsComponent } from './pages/list/components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ListHeaderComponent } from './pages/list/components/list-header/list-he
     HomeComponent,
     MovieCardComponent,
     ListHeaderComponent,
+    ArrayJoinPipe,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

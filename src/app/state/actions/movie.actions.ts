@@ -21,5 +21,5 @@ export const SORT_MOVIES = '[Movies list] Sort Movies';
 
 export const sortMovies = createAction(
   SORT_MOVIES,
-  props<{ sortby: string }>()
+  props<{ sortby: 'title' | 'released_date' }>()
 );

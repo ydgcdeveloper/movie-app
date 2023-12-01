@@ -11,5 +11,8 @@
 }
 
 .list-container {
-  padding: 0 4vw;
+  padding: 3vh 4vw 5vh 4vw;
+  height: inherit;
+  height: -webkit-fill-available;
+  overflow-y: auto;
 }

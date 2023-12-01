@@ -1,3 +1,30 @@
 <div class="moview-card">
-  {{ movie.title }}
+  <a class="movie-image" [routerLink]="'details/' + movie.id">
+    <img [src]="'./assets/resources/' + movie.image" alt="" />
+  </a>
+  <div class="movie-data">
+    <div class="data-row-expanded">
+      <p class="title">
+        {{ movie.title }}
+      </p>
+      <button class="add">Add to Watchlist</button>
+      <button class="on" disabled>On my watchlist</button>
+    </div>
+    <div class="data-row">
+      <p class="duration">
+        {{ movie.duration }}
+      </p>
+      <p class="genre">
+        {{ movie.genre | arrayJoin }}
+      </p>
+    </div>
+    <p class="rating">
+      <img src="./assets/icon/star.png" alt="star" />
+      {{ movie.rating }}
+    </p>
+    <p class="description">
+      {{ movie.description }}
+    </p>
+    <p class="date">({{ movie.released_date }})</p>
+  </div>
 </div>

@@ -8,4 +8,5 @@ export interface MovieModel {
   released_date: string;
   trailer_link: string;
   image: string;
+  watchList?: boolean;
 }
