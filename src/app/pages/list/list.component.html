@@ -1,0 +1,10 @@
+<div class="list-wrapper">
+  <div class="list-view">
+    <app-list-header></app-list-header>
+    <div class="list-container">
+      <ng-container *ngFor="let item of movies$ | async">
+        <app-movie-card [movie]="item"></app-movie-card>
+      </ng-container>
+    </div>
+  </div>
+</div>

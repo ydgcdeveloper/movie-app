@@ -1,0 +1,40 @@
+.list-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.header {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 6vh;
+  background: rgb(167, 60, 60);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.select-container {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.header label {
+    font-size: 1.5rem;
+}
+
+.header select {
+  color: #fff;
+  height: 4vh;
+  width: 16vw;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(94, 26, 26);
+}
