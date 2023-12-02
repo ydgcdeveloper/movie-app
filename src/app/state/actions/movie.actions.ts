@@ -30,3 +30,10 @@ export const addToWatchlist = createAction(
   ADD_TO_WATCHLIST,
   props<{ id: number | undefined }>()
 );
+
+export const REMOVE_FROM_WATCHLIST = '[Movies list] Remove from watchlist';
+
+export const removeFromWatchlist = createAction(
+  REMOVE_FROM_WATCHLIST,
+  props<{ id: number | undefined }>()
+);

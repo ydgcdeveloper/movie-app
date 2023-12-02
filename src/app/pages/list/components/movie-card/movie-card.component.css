@@ -1,11 +1,11 @@
-.moview-card {
+.movie-card {
   display: flex;
   flex: 1;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.moview-card > .movie-data {
+.movie-card > .movie-data {
   flex: 1;
 }
 
@@ -66,8 +66,8 @@
   color: #fff;
   border-radius: 10px;
   border: none;
-  height: 80%;
-  padding: 0 .8rem;
+  height: fit-content;
+  padding: 0.4rem 0.8rem;
 }
 
 .movie-data button.add {
@@ -82,8 +82,8 @@
 }
 
 .movie-data button.on {
-    color: red;
-    font-size: 1rem;
-    background-color: rgb(220, 194, 63);
-    box-shadow: inset 3px 3px 6px #8a1c1e, 3px 3px 6px rgb(210, 125, 125);
-  }
+  color: red;
+  font-size: 1rem;
+  background-color: rgb(220, 194, 63);
+  box-shadow: inset 3px 3px 6px #8a1c1e, 3px 3px 6px rgb(210, 125, 125);
+}

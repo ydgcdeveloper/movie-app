@@ -1,0 +1,25 @@
+.item-wrapper {
+  background-color: black;
+  height: 100%;
+  padding: 0 15vw;
+  color: #fff;
+}
+
+.item-view {
+  height: 100%;
+  background-color: #d31c24;
+}
+
+.item-container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 60% auto;
+}
+
+.youtube-viewver {
+  background-color: #b88a8d;
+}
+
+.details {
+  padding: 2rem;
+}

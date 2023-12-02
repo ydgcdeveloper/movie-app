@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { loadMovies } from 'src/app/state/actions/movie.actions';
@@ -13,9 +13,7 @@ import { selectMoviesList } from 'src/app/state/selectors/product.selectors';
 export class ListComponent implements OnInit {
   movies$: Observable<any> = new Observable();
 
-  constructor(private store: Store<AppState>) {
-    this.store.dispatch(loadMovies());
-  }
+  private store = inject(Store<AppState>);
 
   ngOnInit(): void {
     this.movies$ = this.store.select(selectMoviesList);

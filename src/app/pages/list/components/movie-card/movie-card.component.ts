@@ -1,7 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { MovieModel } from 'src/app/core/models/movie.interface';
-import { addToWatchlist } from 'src/app/state/actions/movie.actions';
+import {
+  addToWatchlist,
+  removeFromWatchlist,
+} from 'src/app/state/actions/movie.actions';
 import { AppState } from 'src/app/state/app.state';
 
 @Component({
@@ -11,11 +14,27 @@ import { AppState } from 'src/app/state/app.state';
 })
 export class MovieCardComponent {
   @Input()
-  movie!: MovieModel;
+  movie: MovieModel;
+  @Input()
+  showToggle: boolean = false;
+  @Input()
+  goToDetails: boolean = true;
 
   constructor(private store: Store<AppState>) {}
 
   add() {
     this.store.dispatch(addToWatchlist({ id: this.movie.id }));
+  }
+
+  remove() {
+    this.store.dispatch(removeFromWatchlist({ id: this.movie.id }));
+  }
+
+  addRemoveFromWathcList(e) {
+    if (e) {
+      this.add();
+    } else {
+      this.remove();
+    }
   }
 }

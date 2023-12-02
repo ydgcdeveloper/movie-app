@@ -14,6 +14,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ListHeaderComponent } from './pages/list/components/list-header/list-header.component';
 import { ArrayJoinPipe } from './pipe/array-join.pipe';
 import { DetailsComponent } from './pages/list/components/details/details.component';
+import { ToggleButtonComponent } from './pages/list/components/toggle-button/toggle-button.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetailsComponent } from './pages/list/components/details/details.compon
     MovieCardComponent,
     ListHeaderComponent,
     ArrayJoinPipe,
-    DetailsComponent
+    DetailsComponent,
+    ToggleButtonComponent
   ],
   imports: [
     BrowserModule,

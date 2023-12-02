@@ -5,6 +5,7 @@ import {
   addToWatchlist,
   loadMovies,
   loadedMovies,
+  removeFromWatchlist,
   sortMovies,
 } from '../actions/movie.actions';
 
@@ -51,17 +52,23 @@ export const moviesReducer = createReducer(
     if (index != -1) {
       movies[index] = { ...movies[index], watchList: true };
 
-      let watchList = localStorage.getItem(WATCH_LIST);
-      if (watchList) {
-        const watchListArr = JSON.parse(watchList) as MovieModel[];
-        if (watchListArr) {
-          watchListArr.push(movies[index]);
-        }
-        localStorage.setItem(WATCH_LIST, JSON.stringify(watchListArr));
-        console.log(watchList);
-      } else {
-        localStorage.setItem(WATCH_LIST, JSON.stringify([movies[index]]));
-      }
+      localStorage.setItem(
+        WATCH_LIST,
+        JSON.stringify(movies.filter((item) => item.watchList))
+      );
+    }
+    return { ...state, movies };
+  }),
+  on(removeFromWatchlist, (state, { id }) => {
+    let movies = [...state.movies];
+    let index: number = movies.findIndex((item) => item.id == id);
+    if (index != -1) {
+      movies[index] = { ...movies[index], watchList: false };
+
+      localStorage.setItem(
+        WATCH_LIST,
+        JSON.stringify(movies.filter((item) => item.watchList))
+      );
     }
     return { ...state, movies };
   })

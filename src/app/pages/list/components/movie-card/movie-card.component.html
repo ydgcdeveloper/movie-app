@@ -1,5 +1,5 @@
-<div class="moview-card">
-  <a class="movie-image" [routerLink]="'details/' + movie.id">
+<div class="movie-card">
+  <a class="movie-image" [routerLink]="goToDetails ? ['details/', movie.id] : undefined">
     <img [src]="'./assets/resources/' + movie.image" alt="" />
   </a>
   <div class="movie-data">
@@ -7,8 +7,17 @@
       <p class="title">
         {{ movie.title }}
       </p>
-      <button *ngIf="!movie.watchList" class="add" (click)="add()">Add to Watchlist</button>
-      <button *ngIf="movie.watchList" class="on" disabled>On my watchlist</button>
+      <ng-container *ngIf="!showToggle">
+        <button *ngIf="!movie.watchList" class="add" (click)="add()">
+          Add to Watchlist
+        </button>
+        <button *ngIf="movie.watchList" class="on" disabled>
+          On my watchlist
+        </button>
+      </ng-container>
+      <ng-container *ngIf="showToggle">
+       <app-toggle-button [value]="movie.watchList" (valueChange)="addRemoveFromWathcList($event)"/>
+      </ng-container>
     </div>
     <div class="data-row">
       <p class="duration">
