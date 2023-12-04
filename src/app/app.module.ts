@@ -13,7 +13,7 @@ import { MovieEffects } from './state/effects/product.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { ListHeaderComponent } from './pages/list/components/list-header/list-header.component';
 import { ArrayJoinPipe } from './pipe/array-join.pipe';
-import { DetailsComponent } from './pages/list/components/details/details.component';
+import { DetailsComponent } from './pages/details/details.component';
 import { ToggleButtonComponent } from './pages/list/components/toggle-button/toggle-button.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { YoutubeComponent } from './pages/list/components/youtube/youtube.component';
