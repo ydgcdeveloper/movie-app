@@ -19,6 +19,8 @@ export class MovieCardComponent {
   showToggle: boolean = false;
   @Input()
   goToDetails: boolean = true;
+  @Input()
+  alone: boolean = false;
 
   constructor(private store: Store<AppState>) {}
 

@@ -1,13 +1,13 @@
 .list-wrapper {
+  display: flex;
   background-color: black;
   height: 100%;
-  padding: 0 15vw;
   color: #fff;
 }
 
 .list-view {
   height: 100%;
-  background-color: #d31c24;
+  background-color: crimson;
 }
 
 .list-container {

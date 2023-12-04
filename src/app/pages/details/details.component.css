@@ -1,19 +1,18 @@
 .item-wrapper {
   background-color: black;
   height: 100%;
-  padding: 0 15vw;
   color: #fff;
 }
 
 .item-view {
   height: 100%;
-  background-color: #d31c24;
+  background-color: crimson;
 }
 
 .item-container {
   display: grid;
   height: 100%;
-  grid-template-rows: minmax(auto, 50vh) auto;
+  grid-template-rows: auto auto;
 }
 
 .youtube-viewver {
@@ -22,8 +21,8 @@
 
 .details {
   height: 100%;
-  display: flex;
-  flex: 1;
   align-items: center;
+  min-width: 640px;
   padding: 2rem;
+  overflow-y: auto;
 }
