@@ -13,13 +13,17 @@
 .item-container {
   display: grid;
   height: 100%;
-  grid-template-rows: 60% auto;
+  grid-template-rows: minmax(auto, 50vh) auto;
 }
 
 .youtube-viewver {
-  background-color: #b88a8d;
+  background-color: #d3363e;
 }
 
 .details {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
   padding: 2rem;
 }

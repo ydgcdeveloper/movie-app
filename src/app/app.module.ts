@@ -15,6 +15,8 @@ import { ListHeaderComponent } from './pages/list/components/list-header/list-he
 import { ArrayJoinPipe } from './pipe/array-join.pipe';
 import { DetailsComponent } from './pages/list/components/details/details.component';
 import { ToggleButtonComponent } from './pages/list/components/toggle-button/toggle-button.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { YoutubeComponent } from './pages/list/components/youtube/youtube.component';
 
 @NgModule({
   declarations: [
@@ -25,16 +27,18 @@ import { ToggleButtonComponent } from './pages/list/components/toggle-button/tog
     ListHeaderComponent,
     ArrayJoinPipe,
     DetailsComponent,
-    ToggleButtonComponent
+    ToggleButtonComponent,
+    YoutubeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot(ROOT_REDUCERS),
     StoreDevtoolsModule.instrument({ name: 'TEST' }),
-    EffectsModule.forRoot([MovieEffects])
+    EffectsModule.forRoot([MovieEffects]),
+    YouTubePlayerModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
