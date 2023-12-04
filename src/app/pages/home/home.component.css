@@ -14,6 +14,7 @@ button, li {
     position: sticky;
     top: 0;
     transition: 1s ease all;
+    z-index: 1;
   }
   
   .navbar-container {
