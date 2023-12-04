@@ -229,7 +229,7 @@ button, li {
     opacity: 0;
     transition: 1s all ease-in-out;
   }
-  
+
   .arrow {
     font-size: 120px;
     position: absolute;

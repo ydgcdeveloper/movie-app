@@ -17,6 +17,7 @@ import { DetailsComponent } from './pages/details/details.component';
 import { ToggleButtonComponent } from './pages/list/components/toggle-button/toggle-button.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { YoutubeComponent } from './pages/list/components/youtube/youtube.component';
+import { SliderMovieItemComponent } from './pages/home/components/slider-movie-item/slider-movie-item.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { YoutubeComponent } from './pages/list/components/youtube/youtube.compon
     DetailsComponent,
     ToggleButtonComponent,
     YoutubeComponent,
+    SliderMovieItemComponent,
   ],
   imports: [
     BrowserModule,

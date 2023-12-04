@@ -54,97 +54,9 @@
         <h1 class="movie-list-title">NEW RELEASES</h1>
         <div class="movie-list-wrapper">
           <div class="movie-list">
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/1.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/2.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Star Wars</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/3.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Storm</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/4.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">1917</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/5.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Avengers</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/6.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/7.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
+            <ng-container *ngFor="let item of arraySliderImages[0]">
+              <app-slider-movie-item [sliderItem]="item" />
+            </ng-container>
           </div>
           <i class="fas fa-chevron-right arrow"></i>
         </div>
@@ -153,98 +65,10 @@
         <h1 class="movie-list-title">NEW RELEASES</h1>
         <div class="movie-list-wrapper">
           <div class="movie-list">
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/8.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/9.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/10.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/11.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/12.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/1.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/1.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-          </div>
+            <ng-container *ngFor="let item of arraySliderImages[1]">
+              <app-slider-movie-item [sliderItem]="item" />
+            </ng-container>
+          </div>8
           <i class="fas fa-chevron-right arrow"></i>
         </div>
       </div>
@@ -262,103 +86,15 @@
           enim impedit, laboriosam omnis minima voluptatibus incidunt.
           Accusamus, provident.
         </p>
-        <button class="featured-button">WATCH</button>
+        <button class="featured-button" routerLink="/list">WATCH</button>
       </div>
       <div class="movie-list-container">
         <h1 class="movie-list-title">NEW RELEASES</h1>
         <div class="movie-list-wrapper">
           <div class="movie-list">
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/1.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/2.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/15.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/3.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/4.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/5.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/1.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
+            <ng-container *ngFor="let item of arraySliderImages[2]">
+              <app-slider-movie-item [sliderItem]="item" />
+            </ng-container>
           </div>
           <i class="fas fa-chevron-right arrow"></i>
         </div>
@@ -367,102 +103,13 @@
         <h1 class="movie-list-title">NEW RELEASES</h1>
         <div class="movie-list-wrapper">
           <div class="movie-list">
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/17.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/18.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/19.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/7.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/1.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/2.jpeg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
-            <div class="movie-list-item">
-              <img
-                class="movie-list-item-img"
-                src="../assets/images/3.jpg"
-                alt=""
-              />
-              <span class="movie-list-item-title">Her</span>
-              <p class="movie-list-item-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic
-                fugit similique accusantium.
-              </p>
-              <button class="movie-list-item-button">Watch</button>
-            </div>
+            <ng-container *ngFor="let item of arraySliderImages[03]">
+              <app-slider-movie-item [sliderItem]="item" />
+            </ng-container>
           </div>
           <i class="fas fa-chevron-right arrow"></i>
         </div>
       </div>
     </div>
   </div>
- 
 </div>
