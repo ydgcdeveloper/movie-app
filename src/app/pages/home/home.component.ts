@@ -71,8 +71,16 @@ export class HomeComponent implements OnInit, OnDestroy {
         const ratio = Math.floor(window.innerWidth / 270);
         clickCounter++;
         if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
-          (movieLists[i] as HTMLElement).style.transform = `translateX(${
-            movieLists[i].computedStyleMap().get('transform')[0].x.value - 300
+          const movieListElement = movieLists[i] as HTMLElement;
+          const computedStyles = window.getComputedStyle(movieListElement);
+          const currentTransformValue =
+            computedStyles.getPropertyValue('transform');
+
+          const currentTranslateX =
+            parseFloat(currentTransformValue.split(',')[4]) || 0;
+
+          movieListElement.style.transform = `translateX(${
+            currentTranslateX - 300
           }px)`;
         } else {
           (movieLists[i] as HTMLElement).style.transform = 'translateX(0)';
